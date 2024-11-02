@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syarat & Ketentuan - KULIAH PAKAR</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 100px auto;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #555;
+      margin-top: 20px;
+    }
+    p, ul {
+      color: #666;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .w3-bar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu-toggle.active + .w3-bar {
+        display: flex;
+      }
+      .w3-bar-item {
+        padding: 10px 5px;
+        font-size: 1em;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body class="w3-theme-l5">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <span class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</span>
+      <div class="w3-bar">
+        <a href="dashboard.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+          <i class="fa fa-home w3-margin-right"></i>HOME
+        </a>
+        <a href="Lokasi.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Lokasi">
+          <i class="fa fa-globe"></i> Lokasi
+        </a>
+        <a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Profil">
+          <i class="fa fa-user"></i> Profil
+        </a>
+        <a href="Pesan.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Pesan">
+          <i class="fa fa-envelope"></i> Pesan
+        </a>
+        <a href="logout.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Logout">
+          <i class="fa fa-sign-out"></i> Logout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <h1>Syarat dan Ketentuan</h1>
+      <p>Selamat datang di situs "KULIAH PAKAR". Dengan mengakses atau menggunakan situs ini, Anda setuju untuk mematuhi syarat dan ketentuan berikut.</p>
+
+      <h2>1. Penggunaan Situs</h2>
+      <p>Anda setuju untuk menggunakan situs ini hanya untuk tujuan yang sah dan tidak melanggar hak pihak ketiga atau membatasi atau menghalangi penggunaan situs oleh pihak lain.</p>
+
+      <h2>2. Hak Kekayaan Intelektual</h2>
+      <p>Semua konten dalam situs ini, termasuk teks, gambar, dan video, adalah milik "KULIAH PAKAR" atau pemegang lisensi terkait. Dilarang mendistribusikan, menyalin, atau memodifikasi konten tanpa izin tertulis.</p>
+
+      <h2>3. Akurasi Informasi</h2>
+      <p>Kami berusaha menyediakan informasi yang akurat dan terbaru. Namun, kami tidak menjamin bahwa semua informasi di situs ini bebas dari kesalahan atau kelalaian.</p>
+
+      <h2>4. Tautan ke Situs Lain</h2>
+      <p>Situs ini mungkin berisi tautan ke situs lain. Kami tidak bertanggung jawab atas konten atau praktik privasi situs lain tersebut.</p>
+
+      <h2>5. Perubahan Syarat dan Ketentuan</h2>
+      <p>Kami dapat memperbarui syarat dan ketentuan ini dari waktu ke waktu. Setiap perubahan akan kami publikasikan di halaman ini, dan perubahan akan berlaku segera setelah dipublikasikan.</p>
+
+      <h2>6. Batasan Tanggung Jawab</h2>
+      <p>Kami tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari penggunaan situs ini atau ketergantungan pada informasi yang disediakan.</p>
+
+      <h2>7. Hukum yang Berlaku</h2>
+      <p>Syarat dan ketentuan ini diatur oleh hukum yang berlaku di Indonesia. Setiap perselisihan yang timbul akan diselesaikan di pengadilan yang berwenang di Indonesia.</p>
+
+      <p>Jika Anda memiliki pertanyaan mengenai syarat dan ketentuan ini, silakan <a href="Kontak.html">hubungi kami</a>.</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu-toggle').classList.toggle('active');
+      document.querySelector('.w3-bar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebijakan Privasi - KULIAH PAKAR</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 100px auto;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p, ul {
+      color: #666;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .w3-bar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu-toggle.active + .w3-bar {
+        display: flex;
+      }
+      .w3-bar-item {
+        padding: 10px 5px;
+        font-size: 1em;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body class="w3-theme-l5">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <span class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</span>
+      <div class="w3-bar">
+        <a href="dashboard.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+          <i class="fa fa-home w3-margin-right"></i>HOME
+        </a>
+        <a href="Lokasi.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Lokasi">
+          <i class="fa fa-globe"></i> Lokasi
+        </a>
+        <a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Profil">
+          <i class="fa fa-user"></i> Profil
+        </a>
+        <a href="Pesan.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Pesan">
+          <i class="fa fa-envelope"></i> Pesan
+        </a>
+        <a href="logout.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Logout">
+          <i class="fa fa-sign-out"></i> Logout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <h1>Kebijakan Privasi</h1>
+      <p>Kebijakan privasi ini menjelaskan bagaimana "KULIAH PAKAR" mengumpulkan, menggunakan, dan melindungi informasi yang Anda berikan saat menggunakan situs ini.</p>
+
+      <h2>Informasi yang Kami Kumpulkan</h2>
+      <ul>
+        <li><strong>Informasi Pribadi:</strong> Kami mungkin mengumpulkan informasi pribadi seperti nama, email, nomor telepon, dan informasi lainnya yang Anda berikan secara sukarela.</li>
+        <li><strong>Data Penggunaan:</strong> Kami mungkin mengumpulkan data tentang cara Anda menggunakan situs kami, termasuk halaman yang Anda kunjungi, waktu yang dihabiskan, dan data lainnya untuk membantu kami meningkatkan layanan.</li>
+      </ul>
+
+      <h2>Bagaimana Kami Menggunakan Informasi Anda</h2>
+      <ul>
+        <li>Untuk menyediakan dan memelihara layanan kami.</li>
+        <li>Untuk meningkatkan kualitas situs dan pengalaman pengguna.</li>
+        <li>Untuk mengirimkan informasi, promosi, atau penawaran khusus jika Anda telah memilih untuk menerimanya.</li>
+      </ul>
+
+      <h2>Keamanan Data</h2>
+      <p>Kami menjaga keamanan informasi Anda dan mengambil langkah-langkah yang wajar untuk melindungi data pribadi Anda dari akses yang tidak sah, perubahan, atau pengungkapan.</p>
+
+      <h2>Pengungkapan Pihak Ketiga</h2>
+      <p>Kami tidak akan membagikan informasi pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali jika diwajibkan oleh hukum.</p>
+
+      <h2>Pembaruan Kebijakan</h2>
+      <p>Kebijakan privasi ini mungkin diperbarui dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan apa pun dengan memposting kebijakan privasi baru di halaman ini.</p>
+
+      <p>Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, jangan ragu untuk menghubungi kami melalui <a href="Kontak.html">halaman kontak</a>.</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu-toggle').classList.toggle('active');
+      document.querySelector('.w3-bar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

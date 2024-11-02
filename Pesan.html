@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengalihan Halaman</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 50px auto;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #666;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .nav-buttons a {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .nav-buttons a:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    // Mengarahkan pengguna setelah 5 detik (5000 ms)
+    setTimeout(function () {
+      window.location.href = "https://www.example.com"; // Ganti dengan URL tujuan Anda
+    }, 5000);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Halaman Pengalihan</h1>
+    <p>Anda akan diarahkan ke halaman baru dalam 5 detik...</p>
+    <p>Jika tidak, silakan <a href="https://stikes-baktara.ac.id/">klik di sini</a>.</p>
+    
+    <!-- Tombol Navigasi Menu -->
+    <div class="nav-buttons">
+      <a href="dashboard.html"><i class="fa fa-home"></i> Home</a>
+      <a href="Lokasi.html"><i class="fa fa-globe"></i> Lokasi</a>
+      <a href="Profil.html"><i class="fa fa-user"></i> Profil</a>
+      <a href="Pesan.html"><i class="fa fa-envelope"></i> Pesan</a>
+    </div>
+  </div>
+</body>
+</html>

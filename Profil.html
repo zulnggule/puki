@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil - KULIAH PAKAR</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 100px auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      margin-bottom: 40px;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .profile-info {
+      color: #666;
+      font-size: 1.1em;
+      text-align: left;
+    }
+
+    .profile-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body class="w3-theme-l5">
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <span class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</span>
+      <div class="w3-bar">
+        <a href="dashboard.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+          <i class="fa fa-home w3-margin-right"></i>HOME
+        </a>
+        <a href="Lokasi.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Lokasi">
+          <i class="fa fa-globe"></i> Lokasi
+        </a>
+        <a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Profil">
+          <i class="fa fa-user"></i> Profil
+        </a>
+        <a href="Pesan.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Pesan">
+          <i class="fa fa-envelope"></i> Pesan
+        </a>
+        <a href="logout.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Logout">
+          <i class="fa fa-sign-out"></i> Logout
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <h1>Profil Tim</h1>
+
+      <div class="profile">
+        <img src="pemateri 1.jpeg" alt="Foto Pemateri 1" class="profile-photo" />
+        <div class="profile-info">
+          <p><strong>Nama:</strong> Budi Santoso</p>
+          <p><strong>Jabatan:</strong> Ketua STIKES</p>
+          <p><strong>Email:</strong> budi@stikesbaktara.ac.id</p>
+          <p>Budi memiliki pengalaman lebih dari 10 tahun dalam bidang pendidikan kesehatan.</p>
+        </div>
+      </div>
+
+      <div class="profile">
+        <img src="pemateri 2.jpeg" alt="Foto Pemateri 2" class="profile-photo" />
+        <div class="profile-info">
+          <p><strong>Nama:</strong> Siti Rahmawati</p>
+          <p><strong>Jabatan:</strong> Dosen Keperawatan</p>
+          <p><strong>Email:</strong> siti@stikesbaktara.ac.id</p>
+          <p>Siti adalah dosen berpengalaman dengan keahlian di bidang keperawatan dan kesehatan masyarakat.</p>
+        </div>
+      </div>
+
+      <div class="profile">
+        <img src="pemateri 3.jpeg" alt="Foto Pemateri 3" class="profile-photo" />
+        <div class="profile-info">
+          <p><strong>Nama:</strong> Ahmad Fadillah</p>
+          <p><strong>Jabatan:</strong> Kepala Bagian Akademik</p>
+          <p><strong>Email:</strong> ahmad@stikesbaktara.ac.id</p>
+          <p>Ahmad bertanggung jawab atas pengelolaan administrasi akademik dan pengembangan kurikulum.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu-toggle').classList.toggle('active');
+      document.querySelector('.w3-bar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
